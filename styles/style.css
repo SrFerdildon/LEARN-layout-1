@@ -9,7 +9,7 @@ html, body {
 body {
 	font-family: 'Montserrat';
 	font-size: 16px;
-	line-height: 1.6;
+	line-height: normal;
 	min-width: 320px;
 	position: relative;
 	margin: 0;
@@ -43,6 +43,19 @@ input, textarea {
 input::placeholder, 
 textarea::placeholder {
 	color: #9F9F9F;
+}
+
+.def-button {
+	background-color: #D62E4C;
+	padding: 20px 48px;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 500;
+	transition: background-color 0.35s ease;
+}
+
+.def-button:hover {
+	background-color: #BB2440;
 }
 
 /* Header START */
@@ -92,6 +105,12 @@ textarea::placeholder {
 
 .header-bottom {
 	margin-top: -41px;
+	position: absolute;
+	z-index: 2;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: 1240px;
+	width: 100%;
 }
 
 .header-bottom-row {
@@ -127,3 +146,92 @@ textarea::placeholder {
 	max-height: 22px;
 }
 /* Header END */
+
+/* Banner START */
+.swiper-slide {
+	padding: 175px 0 181px 0;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #fff;
+	text-align: center;
+	min-height: 692px;
+}
+
+.swiper-slide::before {
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(35, 31, 31, 0.80);
+}
+
+.banner-content {
+	max-width: 715px;
+	margin: 0 auto;
+}
+
+.banner-subtitle {
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 16px;
+}
+
+.banner-title {
+	font-size: 54px;
+	font-weight: 300;
+}
+
+.banner-button {
+	margin-top: 18px;
+}
+
+.banner-swiper {
+	position: relative;
+}
+
+.banner-swiper .swiper-button-next,
+.banner-swiper .swiper-button-prev {
+	box-sizing: content-box;
+	color: #fff;
+	background: rgba(90, 84, 84, 0.57);
+	width: 48px;
+	height: 48px;
+	padding: 16px;
+	margin: 0 56px;
+	position: absolute;
+	top: 262px;
+}
+
+.banner-swiper .swiper-button-next:after,
+.banner-swiper .swiper-button-prev:after {
+	font-size: 32px;
+}
+
+.swiper-pagination {
+	height: 14px;
+	margin-bottom: 100px;
+}
+
+.swiper-pagination-bullet {
+	background: #D9D9D9;
+	opacity: 1;
+	width: 14px;
+	height: 14px;
+	border-radius: 0;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 9.5px);
+}
+
+.swiper-pagination-bullet-active {
+background: #D62E4C;
+}
+/* Banner END */
