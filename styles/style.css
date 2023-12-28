@@ -56,7 +56,7 @@ textarea::placeholder {
 	height: 1px;
 	width: 100%;
 	position: absolute;
-	top: 50%;
+	top: 31px;
 	transform: translateY(-50%);
 	left: calc(-100% - 26px);
 	background-color: #D62E4C;
@@ -295,3 +295,70 @@ background: #D62E4C;
 	object-fit: cover;
 }
 /* About us END */
+
+/* Numbers START */
+.s-numbers {
+	background: #18353E;
+	padding: 72px 0 90px 0;
+	color: #FFF;
+}
+
+.num-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.barrier {
+	width: 1px;
+	align-self: stretch;
+	background: rgba(213, 213, 213, 0.85);
+}
+
+.num-left .def-title {
+	line-height: 134.9%;
+	width: 387px;
+}
+
+.num-left .def-title::before {
+	background-color: #fff;
+}
+
+.num-left .def-desc {
+	color: #9D9494;
+	font-size: 18px;
+	line-height: 197.9%;
+	width: 471px;
+}
+
+.num-right {
+	box-sizing: content-box;
+	display: grid;
+	grid-template-columns: repeat(2, 170px);
+	justify-content: space-between;
+	row-gap: 78px;
+	column-gap: 150px;
+	width: 490px;
+	text-align: center;
+	font-style: normal;
+	line-height: normal;
+	padding-right: 40px;
+}
+
+.numbers {
+	font-size: 58px;
+	font-weight: 900;
+	padding-bottom: 17.5px;
+}
+
+.num-desc {
+	font-size: 18px;
+	font-weight: 300;
+}
+/* Numbers END */
+
+/* Services START */
+.s-services {
+	background: #fff;
+}
+/* Services END */
