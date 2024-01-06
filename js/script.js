@@ -19,4 +19,19 @@ document.addEventListener('DOMContentLoaded', () => {
 			prevEl: '.banner-swiper .swiper-button-prev',
 		},
 	});
+
+	$('.order-button').magnificPopup({
+		type: 'inline',
+		showCloseBtn: false,
+		removalDelay: 100,
+		callbacks: {
+			beforeOpen: function () {
+				this.st.mainClass = this.st.el.attr('data-effect');
+			}
+		},
+	});
+
+	$('.modal-form-close').on('click', function () {
+		$.magnificPopup.close();
+	});
 })
