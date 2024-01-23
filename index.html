@@ -27,8 +27,8 @@
 		<div class="modal-form-body">
 			<div class="modal-form-title">Заказать звонок</div>
 			<form>
-				<input type="text" placeholder="Ваше имя*" required>
-				<input type="text" placeholder="Ваше телефон*" required>
+				<input id="text" type="text" placeholder="Ваше имя*" required>
+				<input id="phone" type="text" placeholder="Ваше телефон*" required autocomplete="cc-number">
 				<button class="def-button">Отправить</button>
 			</form>
 		</div>
@@ -189,7 +189,7 @@
 		</div>
 	</section>
 
-	<disectionv class="s-services">
+	<section class="s-services">
 		<div class="container">
 			<h2 class="center-title">
 				Наши услуги
@@ -219,7 +219,7 @@
 				</div>
 			</div>
 		</div>
-	</disectionv>
+	</section>
 
 	<section class="s-gallery">
 		<div class="container">
@@ -389,6 +389,122 @@
 			</div>
 		</div>
 	</section>
+
+	<section class="s-reviews">
+		<div class="container">
+			<h2 class="center-title">Что говорят клиенты</h2>
+
+			<div class="swiper reviews-swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="reviews-img">
+							<img src="images/client-1.jpg" alt="Константин Кузьмин">
+						</div>
+						<div class="reviews-body">
+							<p class="reviews-name">Константин Кузьмин</p>
+							<p class="reviews-title">Основатель компании LIFECONST</p>
+							<p class="reviews-text">Я был очень впечатлен результатом которую заказывал. Компания
+								Construction реализовала все мои ожидания!</p>
+							<hr>
+							<div class="reviews-contacts">
+								<a href="#"><img src="images/social-vk-gray.svg" alt="Вконтакте"></a>
+								<a href="#"><img src="images/social-facebook-gray.svg" alt="Facebook"></a>
+								<a href="#"><img src="images/social-telegram-gray.svg" alt="Телеграм"></a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="reviews-img">
+							<img src="images/client-2.jpg" alt="Ракеш Джаггернаут">
+						</div>
+						<div class="reviews-body">
+							<p class="reviews-name">Ракеш Джаггернаут</p>
+							<p class="reviews-title">Директор торгового центра BRUK</p>
+							<p class="reviews-text">Заказывал проектирование для нашего здания. Результатом очень
+								доволен. Компания ответственно относится к своим клиентам</p>
+							<hr>
+							<div class="reviews-contacts">
+								<a href="#"><img src="images/social-vk-gray.svg" alt="Вконтакте"></a>
+								<a href="#"><img src="images/social-facebook-gray.svg" alt="Facebook"></a>
+								<a href="#"><img src="images/social-telegram-gray.svg" alt="Телеграм"></a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="reviews-img">
+							<img src="images/client-3.jpg" alt="Забава Лукия">
+						</div>
+						<div class="reviews-body">
+							<p class="reviews-name">Забава Лукия</p>
+							<p class="reviews-title">Коммерческий директор MAGNUM</p>
+							<p class="reviews-text">Хотела сделать ремонт для моего офиса. Заказала услугу ремонт по
+								дому. Ребята сопровождали от начала и до конца.
+								Рекомендую!</p>
+							<hr>
+							<div class="reviews-contacts">
+								<a href="#"><img src="images/social-vk-gray.svg" alt="Вконтакте"></a>
+								<a href="#"><img src="images/social-facebook-gray.svg" alt="Facebook"></a>
+								<a href="#"><img src="images/social-telegram-gray.svg" alt="Телеграм"></a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="reviews-img">
+							<img src="images/client-5.jpg" alt="Константин Кузьмин">
+						</div>
+						<div class="reviews-body">
+							<p class="reviews-name">Константин Кузьмин</p>
+							<p class="reviews-title">Основатель компании LIFECONST</p>
+							<p class="reviews-text">Я был очень впечатлен результатом которую заказывал. Компания
+								Construction реализовала все мои ожидания!</p>
+							<hr>
+							<div class="reviews-contacts">
+								<a href="#"><img src="images/social-vk-gray.svg" alt="Вконтакте"></a>
+								<a href="#"><img src="images/social-facebook-gray.svg" alt="Facebook"></a>
+								<a href="#"><img src="images/social-telegram-gray.svg" alt="Телеграм"></a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="reviews-img">
+							<img src="images/client-6.jpg" alt="Константин Кузьмин">
+						</div>
+						<div class="reviews-body">
+							<p class="reviews-name">Константин Кузьмин</p>
+							<p class="reviews-title">Основатель компании LIFECONST</p>
+							<p class="reviews-text">Я был очень впечатлен результатом которую заказывал. Компания
+								Construction реализовала все мои ожидания!</p>
+							<hr>
+							<div class="reviews-contacts">
+								<a href="#"><img src="images/social-vk-gray.svg" alt="Вконтакте"></a>
+								<a href="#"><img src="images/social-facebook-gray.svg" alt="Facebook"></a>
+								<a href="#"><img src="images/social-telegram-gray.svg" alt="Телеграм"></a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="reviews-img">
+							<img src="images/client-4.jpg" alt="Константин Кузьмин">
+						</div>
+						<div class="reviews-body">
+							<p class="reviews-name">Константин Кузьмин</p>
+							<p class="reviews-title">Основатель компании LIFECONST</p>
+							<p class="reviews-text">Я был очень впечатлен результатом которую заказывал. Компания
+								Construction реализовала все мои ожидания!</p>
+							<hr>
+							<div class="reviews-contacts">
+								<a href="#"><img src="images/social-vk-gray.svg" alt="Вконтакте"></a>
+								<a href="#"><img src="images/social-facebook-gray.svg" alt="Facebook"></a>
+								<a href="#"><img src="images/social-telegram-gray.svg" alt="Телеграм"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</section>
+
 	<script src="js/jquery-3.7.0.min.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/magnific-popup.min.js"></script>

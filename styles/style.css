@@ -203,7 +203,7 @@ textarea::placeholder {
 /* Header END */
 
 /* Banner START */
-.swiper-slide {
+.s-banner .swiper-slide {
 	padding: 175px 0 181px 0;
 	background-position: center;
 	background-size: cover;
@@ -213,7 +213,7 @@ textarea::placeholder {
 	min-height: 692px;
 }
 
-.swiper-slide::before {
+.s-banner .swiper-slide::before {
 	content: '';
 	display: block;
 	position: absolute;
@@ -686,3 +686,87 @@ background: #D62E4C;
 	margin: 0 33px;
 }
 /* Team END */
+
+/* Reviews START */
+.s-reviews {
+	background: url("../images/reviews-bg.png");
+	background-size: cover;
+	padding: 100px 0 90px;
+}
+
+.s-reviews .center-title {
+	color: #FFFFFF;
+	margin-bottom: 93px;
+}
+
+.s-reviews .center-title::after {
+	background-color: #FFFFFF;
+}
+
+.s-reviews .swiper-slide {
+	background: #FFF;
+	box-shadow: 0px 4px 4px 0px rgba(95, 87, 87, 0.12);
+	min-width: 383px;
+	min-height: 554px;
+}
+
+.s-reviews .swiper-pagination {
+	height: 14px;
+	margin-bottom: 0;
+	margin-top: 53px;
+	bottom: 0;
+	position: relative;
+}
+
+.s-reviews hr {
+	background: #C5B8B8;
+	margin: 20px 0;
+}
+
+.reviews-img img {
+	max-width: 100%;
+}
+
+.reviews-body {
+	padding: 18px 30px 38px;
+}
+
+.reviews-name {
+	color: #000;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 700;
+	margin: 0 0 7px;
+}
+
+.reviews-title {
+	color: #979494;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	margin: 0 0 21px;
+}
+
+.reviews-text {
+	color: #8A8787;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 151.9%;
+}
+
+.reviews-contacts {
+	display: flex;
+	justify-content: flex-start;
+	gap: 28px;
+}
+
+.reviews-contacts a {
+	display: inline-block;
+	transition: filter 0.5s ease;
+}
+
+.reviews-contacts a:hover {
+	filter: invert(1);
+}
+/* Reviews END */
