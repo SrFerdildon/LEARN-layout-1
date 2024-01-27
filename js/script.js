@@ -95,4 +95,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		},
 	});
 	// Reviews END
+
+	// Hamburger START
+	$(document).ready(function () {
+		$('.hamburger-button').click(function (event) {
+			$('.mobile-header, .hamburger-content, .hamburger-button').toggleClass('active');
+			$('body').toggleClass('fixed-page');
+		});
+	});
+	// Hamburger END
 })
